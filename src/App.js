@@ -31,7 +31,7 @@ export default function App() {
       </div>
       <div className="jon-center">
         <div className="btn-container">
-          {job.map((item, index) => {
+          {jobs.map((item, index) => {
             return (
               <button
                 key={item.id}
