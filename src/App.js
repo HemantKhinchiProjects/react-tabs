@@ -34,7 +34,7 @@ export default function App() {
           <h3>{title}</h3>
           <h4>{company}</h4>
           <p className="job-date">{dates}</p>
-          {duties.map(
+          {/* {duties.map(
             (duty,
             (index) => {
               return (
@@ -53,7 +53,7 @@ export default function App() {
                 </div>
               );
             })
-          )}
+          )} */}
         </div>
       </div>
     </section>
