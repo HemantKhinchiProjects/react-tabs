@@ -2,10 +2,27 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 const url = 'https://course-api.com/react-tabs-project';
 export default function App() {
-  return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
-  );
+  const [loading, setLoading] = useState(true);
+  const [jobs, setJobs] = useState([]);
+  const [value, setValue] = useState(0);
+
+  const featchJobs = async () => {
+    const response = await fetch(url);
+    const newJobs = await response.json();
+    setJobs(newJobs);
+    setLoading(false);
+  };
+  useEffect(() => {
+    featchJobs();
+  }, []);
+  console.log([]);
+  if (loading) {
+    reaturn(
+      <Selection className="selection loading">
+        <h1>loading...</h1>
+      </Selection>
+    );
+  }
+  
+  return <main></main>;
 }
