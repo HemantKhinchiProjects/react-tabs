@@ -6,14 +6,14 @@ export default function App() {
   const [jobs, setJobs] = useState([]);
   const [value, setValue] = useState(0);
 
-  const featchJobs = async () => {
+  const fetchJobs = async () => {
     const response = await fetch(url);
     const newJobs = await response.json();
     setJobs(newJobs);
     setLoading(false);
   };
   useEffect(() => {
-    featchJobs();
+    fetchJobs();
   }, []);
   if (loading) {
     return (
