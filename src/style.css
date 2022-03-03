@@ -204,7 +204,7 @@ Jobs
 .job-date {
   letter-spacing: var(--spacing);
 }
-.job-desc {
+svg.job-desc {
   display: grid;
   grid-template-columns: auto 1fr;
   column-gap: 2rem;

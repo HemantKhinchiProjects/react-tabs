@@ -30,6 +30,21 @@ export default function App() {
         <div className="underline"></div>
       </div>
       <div className="jon-center">
+        <div className="btn-container">
+          {job.map((item, index) => {
+            return (
+              <button
+                key={item.id}
+                onClick={() => {
+                  setValue(index);
+                }}
+                className={`job-btn ${index === value && 'active-btn'}`}
+              >
+                {item.company}
+              </button>
+            );
+          })}
+        </div>
         <div className="job-info">
           <h3>{title}</h3>
           <h4>{company}</h4>
