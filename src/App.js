@@ -15,14 +15,12 @@ export default function App() {
   useEffect(() => {
     featchJobs();
   }, []);
-  console.log([]);
   if (loading) {
-    reaturn(
-      <Selection className="selection loading">
+    return (
+      <section className="selection loading">
         <h1>loading...</h1>
-      </Selection>
+      </section>
     );
   }
-  
-  return <main></main>;
+  return <main> job </main>;
 }
