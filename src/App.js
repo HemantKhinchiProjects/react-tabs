@@ -53,10 +53,10 @@ export default function App() {
             return (
               <div key={index} className="job-desc">
                 <svg
+                  viewBox="0 0 32 32"
                   className="job-icon"
                   height="15px"
                   width="15px"
-                  viewBox="0 0 32 32"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <defs></defs>
