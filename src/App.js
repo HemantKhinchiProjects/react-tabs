@@ -18,7 +18,12 @@ export default function App() {
   if (loading) {
     return (
       <section className="selection loading">
-        <h1>loading...</h1>
+        <div class="lds-ring">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </section>
     );
   }
